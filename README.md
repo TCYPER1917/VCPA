@@ -79,3 +79,4 @@ class VCPAQwen2Attention(nn.Module):
 ## 📜 License
 
 This project is open-source under the [MIT License](LICENSE). Contributions, suggestions, and extensions to other model families are highly welcome!
+by : karam awashra
