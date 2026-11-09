@@ -1,0 +1,9 @@
+# Core runtime
+torch>=2.1
+transformers>=4.45
+
+# Optional: accuracy benchmark corpus (wikitext-2)
+datasets>=2.18
+
+# Optional: 4-bit loading for large models on Kaggle
+# bitsandbytes>=0.43

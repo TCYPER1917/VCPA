@@ -1,0 +1,25 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "vcpa-inject"
+version = "12.0.0a0"
+description = "Training-free, reversible runtime chunked-exact + pooled-landmark attention adapter for pretrained causal LMs"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+dependencies = [
+    "torch>=2.1",
+    "transformers>=4.45",
+]
+
+[project.optional-dependencies]
+bench = ["datasets>=2.18"]
+dev = ["pytest>=8"]
+
+[tool.setuptools]
+packages = ["vcpa"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
